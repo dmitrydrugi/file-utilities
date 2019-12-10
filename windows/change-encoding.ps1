@@ -31,4 +31,4 @@ try {
 } catch {
 	Write-Error -Message $_.Exception.Message -Category InvalidArgument -ErrorId "E-001"
 }
-Read-Host "Press Enter to continue"
+Read-Host "Press [Enter] to continue"
