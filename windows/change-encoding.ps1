@@ -18,7 +18,7 @@ $FileFilter = Read-Host-Default "Please enter the file filter" $FileFilter
 $SourceEncodingName = Read-Host-Default "Please enter the source encoding name" $SourceEncodingName
 $TargetEncodingName = Read-Host-Default "Please enter the target encoding name" $TargetEncodingName
 $TargetEncodingCode = Read-Host-Default "Please enter the target encoding code" $TargetEncodingCode
-[string]$Confirmation = Read-Host-Default ("Please enter the confirmation to change an encoding of all " + 
+[String]$Confirmation = Read-Host-Default ("Please enter the confirmation to change an encoding of all " + 
 	$FileFilter + " files from " + $SourceEncodingName + " to " + $TargetEncodingName + 
 	" of " + $SourceDirectory + " directory including subdirectories") "Y"
 if (!$Confirmation -eq "" -And $Confirmation.ToUpper() -eq "Y") {
