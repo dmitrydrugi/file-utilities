@@ -50,7 +50,7 @@ if (!$Confirmation -eq "" -And $Confirmation.ToUpper() -eq "Y") {
         }
     }
     catch [System.IO.IOException] {
-        Write-Error -Message ("Directory " + $SrcDir + " does not exist") -Category InvalidArgument -ErrorId "F-002"
+        Write-Error -Message ("Directory " + $SourceDirectory + " does not exist") -Category InvalidArgument -ErrorId "F-002"
     }
     catch {
         Write-Error -Message $_.Exception.Message -Category InvalidArgument -ErrorId "F-001"
